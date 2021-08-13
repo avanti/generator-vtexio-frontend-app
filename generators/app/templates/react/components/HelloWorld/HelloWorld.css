@@ -1,0 +1,22 @@
+.title {
+  font-weight: 700;
+  text-align: center;
+}
+
+.content {
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.secretMessage {
+  margin: 20px 0;
+}
+
+.secretMessage > span {
+  background-color: #000;
+  color: #000;
+}
+
+.secretMessage > span:hover {
+  color: #fff;
+}
