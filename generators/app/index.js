@@ -28,7 +28,7 @@ module.exports = class extends Generator {
         type: 'input',
         name: 'title',
         message: 'What is the title of your app?',
-        default: "MyApp"
+        default: "My App"
       },
       {
         type: 'input',
@@ -76,11 +76,11 @@ module.exports = class extends Generator {
     };
 
     if (!this.props.useHelpers) {
-      copyOpts.globOptions.ignore.push(src + "/react/helpers");
+      copyOpts.globOptions.ignore.push(`${src}/react/helpers`);
     }
 
     if (!this.props.useContext) {
-      copyOpts.globOptions.ignore.push(src + "/react/context");
+      copyOpts.globOptions.ignore.push(`${src}/react/context`);
     }
 
     this.fs.copyTpl(
@@ -90,6 +90,9 @@ module.exports = class extends Generator {
       null,
       copyOpts
     );
+
+    // rename .gitignore
+    this.fs.move(`${dest}/rename.gitignore`, `${dest}/.gitignore`, copyOpts)
   }
 
   install() {

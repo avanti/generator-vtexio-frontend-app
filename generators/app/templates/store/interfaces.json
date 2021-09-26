@@ -1,5 +1,5 @@
 {
   "<%= name %>": {
-    "component": "index"
+    "component": "HelloWorldWrapper"
   }
 }

@@ -1,4 +1,5 @@
 .title {
+  margin-top: 20px;
   font-weight: 700;
   text-align: center;
 }
@@ -6,6 +7,16 @@
 .content {
   padding: 15px;
   margin: 20px 0;
+}
+
+.hello {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconWavingHand {
+  margin-left: 5px;
 }
 
 .secretMessage {

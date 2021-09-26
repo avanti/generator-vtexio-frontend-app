@@ -1,7 +1,7 @@
 {
   "vendor": "<%= vendor %>",
   "name": "<%= name %>",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "title": "<%= title %>",
   "description": "<%= description %>",
   "builders": {

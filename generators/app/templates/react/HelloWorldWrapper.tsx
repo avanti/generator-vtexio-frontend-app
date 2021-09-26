@@ -5,7 +5,7 @@ import { AppContextProvider } from './context'
 
 import HelloWorld from './components/HelloWorld';
 
-function App(): JSX.Element {
+function HelloWorldWrapper(): JSX.Element {
   return (
     <%_ if (useContext) { _%>
     <AppContextProvider>
@@ -21,4 +21,4 @@ function App(): JSX.Element {
   )
 }
 
-export default App
+export default HelloWorldWrapper
